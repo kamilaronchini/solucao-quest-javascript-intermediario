@@ -1,0 +1,9 @@
+@media(max-width: 690px){
+    main {
+        flex-direction: column;
+    }
+
+    .mensagem-principal {
+        text-align: center;
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Formulário com verificação</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/estilos.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+</head>
+
+<body>
+    <main>
+        <div class="mensagem-principal">
+            <h1 class="titulo">
+                Ficou com dúvida?
+                <br>
+                Nos mande uma mensagem!
+            </h1>
+
+            <p class="paragrafo">
+                Caso tenha ficado com qualquer dúvida, basta nos mandar uma mensagem e entraremos em contato em menos de
+                24h.
+            </p>
+        </div>
+
+
+        <form class="formulario">
+
+            <div>
+                <input type="text" name="nome" placeholder="Nome completo *" class="item borda">
+
+                <p class="campo-obrigatorio">Campo obrigatório</p>
+            </div>
+
+            <div>
+                <input type="e-mail" name="e-mail" placeholder="Email *" class="item borda">
+
+                <p class="campo-obrigatorio">Campo obrigatório</p>
+            </div>
+
+            <div>
+                <input type="tel" name="telefone" placeholder="Telefone *" maxlength="11" class="item borda">
+
+                <p class="campo-obrigatorio">Campo obrigatório</p>
+            </div>
+
+            <div>
+                <textarea name="mensagem" cols="30" rows="10" placeholder="Mensagem *"
+                class="item mensagem borda"></textarea>
+
+                <p class="campo-obrigatorio">Campo obrigatório</p>
+            </div>
+
+            <p class="campos-obrigatorios">*campos obrigatórios</p>
+
+            <button class="botao" id="botao">Enviar</button>
+    
+        </form>
+
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>
